@@ -7,7 +7,7 @@ import { FaRegNewspaper } from "react-icons/fa";
 const navigation = [
   { name: 'Sports', href: '#', current: true },
   { name: 'Weather', href: '#', current: false },
-  { name: 'Sciencs', href: '#', current: false },
+  { name: 'Science', href: '#', current: false },
   { name: 'Politics', href: '#', current: false },
 ]
 

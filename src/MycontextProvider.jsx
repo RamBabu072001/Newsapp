@@ -4,7 +4,7 @@ import Mycontext from "./Mycontext"
 import { useReducer } from "react";
 import reducer from "./reducer";
 
-const API_key = '5d775a76c28445a68d2af9f5da5df5fa'
+const API_key = import.meta.env.VITE_APP_KEY
 let API = `https://newsapi.org/v2/everything?`;
 
 
