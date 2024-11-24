@@ -4,8 +4,7 @@ import Mycontext from "./Mycontext"
 import { useReducer } from "react";
 import reducer from "./reducer";
 
-const API_key = import.meta.env.VITE_APP_KEY
-let API = `https://newsapi.org/v2/everything?`;
+
 
 
 const initialState = {
@@ -65,7 +64,7 @@ const MycontextProvider = ({children})=>{
     };
 
     useEffect(()=>{
-        fetchApiData(`${API}q=${state.q}&pageSize=${state.pageSize}&page=${state.page}&apiKey=${API_key}`);
+        fetchApiData(`https://newsapp-vert-psi.vercel.app/all-news?q=${state.q}&pageSize=${state.pageSize}&page=${state.page}`);
     }, [state.q , state.page] );
 
 
