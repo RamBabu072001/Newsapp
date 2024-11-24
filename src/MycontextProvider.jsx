@@ -51,7 +51,7 @@ const MycontextProvider = ({children})=>{
             dispatch({
                 type:"GET_STORIES",
                 payload: {
-                    articles: data.articles,
+                    articles: data.data.articles,
                     
                 }
             })
