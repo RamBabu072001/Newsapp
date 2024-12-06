@@ -120,6 +120,7 @@ export default function Header() {
             <DisclosureButton
               key={item.name}
               as="a"
+              onClick={()=>{SearchPost(item.name)}}
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
